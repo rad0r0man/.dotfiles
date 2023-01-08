@@ -74,13 +74,21 @@ style = "bg:#1d2230"
 format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [battery]
-full_symbol = '🔋 '
-charging_symbol = '⚡️ '
-discharging_symbol = '🔋 '
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
 
 [[battery.display]]
 threshold = 100
 style = 'bold green'
+
+[[battery.display]]
+threshold = 50
+style = 'bold yellow'
+
+[[battery.display]]
+threshold = 30
+style = 'bold red'
 
 [character]
 success_symbol = '[#](bold gray)'

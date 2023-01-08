@@ -93,7 +93,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # custom aliases
-alias cdwin='cd /mnt/c/Users/radoe/Desktop'
+alias cdwin='cd /mnt/c/Users/$USER/Desktop'
 alias update='sudo apt-get update && sudo apt-get upgrade -y'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

@@ -14,6 +14,7 @@ $golang\
 $php\
 [](fg:#212736 bg:#1d2230)\
 $time\
+$battery\
 [ ](fg:#1d2230)\
 \n$character"""
 
@@ -71,6 +72,15 @@ disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#1d2230"
 format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '⚡️ '
+discharging_symbol = '🔋 '
+
+[[battery.display]]
+threshold = 100
+style = 'bold green'
 
 [character]
 success_symbol = '[#](bold gray)'

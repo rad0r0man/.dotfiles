@@ -94,6 +94,8 @@ alias l='ls -CF'
 
 # custom aliases
 alias cdwin='cd /mnt/c/Users/$USER/Desktop'
+alias cdwinc='cd /mnt/c/'
+alias refresh='source $HOME/.bashrc'
 alias update='sudo apt-get update && sudo apt-get upgrade -y'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

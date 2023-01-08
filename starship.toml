@@ -14,8 +14,8 @@ $golang\
 $php\
 [](fg:#212736 bg:#1d2230)\
 $time\
-$battery\
 [ ](fg:#1d2230)\
+$battery\
 \n$character"""
 
 
@@ -79,16 +79,19 @@ charging_symbol = "🔌"
 discharging_symbol = "⚡"
 
 [[battery.display]]
-threshold = 100
-style = 'bold green'
-
-[[battery.display]]
-threshold = 50
-style = 'bold yellow'
-
-[[battery.display]]
-threshold = 30
+threshold = 20
+discharging_symbol = ""
 style = 'bold red'
+
+[[battery.display]]
+threshold = 55
+discharging_symbol = ""
+style = 'yellow'
+
+[[battery.display]]
+threshold = 100
+discharging_symbol = ""
+style = 'bold green'
 
 [character]
 success_symbol = '[#](bold gray)'

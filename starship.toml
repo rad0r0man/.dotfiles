@@ -1,18 +1,20 @@
 format = """
-[](#24283b)\
+[](#a3aed2)\
 $username\
-[  ](bg:#a3aed2 fg:#090c0c)\
-[](bg:#769ff0 fg:#a3aed2)\
+[](bg:#a3aed2 fg:#090c0c)\
+[](bg:#769ff0 fg:#a3aed2)\
 $directory\
-[](fg:#769ff0 bg:#394260)\
+[](fg:#769ff0 bg:#394260)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#212736)\
+[](fg:#394260)\
+$python\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:#212736 bg:#1d2230)\
+$fill\
+[](#1d2230)\
 $time\
 [ ](fg:#1d2230)\
 $shell\
@@ -22,8 +24,9 @@ $battery\
 
 [username]
 show_always = true
-style_user = "bg:#24283b"
-style_root = "fg:#090c0c"
+style_user= "bg:#a3aed2 fg:#090c0c" 
+#style_user = "bg:#a3aed2"
+#style_root = "fg:#090c0c"
 format = '[$user ]($style)'
 disabled = false
 
@@ -68,6 +71,10 @@ symbol = ""
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 
+[fill]
+symbol = ' '
+style = 'fg:#a3aed2'
+
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
@@ -100,5 +107,5 @@ discharging_symbol = ""
 style = 'bold green'
 
 [character]
-success_symbol = '[#](bold gray)'
+success_symbol = '[>](bold gray)'
 error_symbol = '[✗](bold red)'

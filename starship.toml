@@ -83,7 +83,8 @@ format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [shell]
 style = 'fg:#a0a9cb '
-bash_indicator = ''
+#bash_indicator = ''
+bash_indicator = 'bash'
 disabled = false
 
 [battery]
